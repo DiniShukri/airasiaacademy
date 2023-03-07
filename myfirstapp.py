@@ -23,7 +23,7 @@ elif option=='T n C':
         st.write(pd.DataFrame({
         'Intplan': ['yes', 'yes', 'yes', 'no'],
         'Churn Status': [0, 0, 0, 1]
-        }))
+
 
 else:
     'Starting a long computation...'
@@ -39,3 +39,4 @@ else:
 
     '...and now we\'re done!'
 
+        }))

@@ -7,7 +7,7 @@ st.header("My first Streamlit App")
 
 option = st.sidebar.selectbox(
     'Select a mini project',
-     ['line chart','map','T n C'])
+     ['line chart','map','T n C','Long Process'])
 
 if option=='line chart':
     chart_data = pd.DataFrame(
@@ -15,13 +15,13 @@ if option=='line chart':
     columns=['a', 'b', 'c'])
 
     st.line_chart(chart_data)
-    
+
 elif option=='map':
     map_data = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
 
-    st.map(map_data)    
+    st.map(map_data)
 
 elif option=='T n C':
     st.write('Before you continue, please read the [terms and conditions](https://www.gnu.org/licenses/gpl-3.0.en.html)')
